@@ -10,11 +10,18 @@ function whoAmI(name,age) {
     try {
         if (age < 0) throw "is too low";
     }
-    
     catch(err) {
         console.log('Age cannot be negative');
     }
+
+    if(name == null){
+        console.error("Arguments not valid")
     }
+
+    if(age == null){
+        console.error("Arguments not valid")
+    }
+}
 
 yearOfBirth("29");
 whoAmI("Chris","29");
